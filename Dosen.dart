@@ -23,7 +23,7 @@ class Dosen extends Manusia {
   }
   
   void info() {
-    super.info(); // Memanggil metode info dari kelas induk Manusia
+    super.info();
     print('NIP: $_nip');
     print('Keahlian: $_keahlian');
   }
