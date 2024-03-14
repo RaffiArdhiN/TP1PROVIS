@@ -33,7 +33,7 @@ class Mahasiswa extends Manusia {
   }
 
   void info() {
-    super.info(); // Memanggil metode info dari kelas induk Manusia
+    super.info();
     print('NIM: $_nim');
     print('Jurusan: $_jurusan');
     print('Dosen Wali:');
@@ -41,7 +41,6 @@ class Mahasiswa extends Manusia {
   }
 
   Future<void> ambilData() async {
-    // Simulasi pengambilan data dari database atau API
     await Future.delayed(Duration(seconds: 2));
     print('Data mahasiswa $nama ($umur tahun) berhasil diambil.');
   }
